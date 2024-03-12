@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige; /* Set background color to beige */
+    color: #333; /* Set text color to dark grey */
+}
+
+main {
+    margin: 0 auto; /* Center the main content */
+    max-width: 600px; /* Limit main content width */
+    padding: 20px;
+}
+
+section#profile {
+    text-align: center; /* Center align content */
+    background-color: white; /* Set background color to white */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+section#profile img {
+    display: block; /* Ensure image is centered */
+    margin: 0 auto 20px; /* Center image and add space below */
+    width: 200px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+h2 {
+    color: pink; /* Set heading color to pink */
+}
+
+h3 {
+    color: #333; /* Set subheading color to dark grey */
+}
+
+h4 {
+    color: pink; /* Set subheading color to pink */
+}
+
+p {
+    margin: 10px 0; /* Add margin to paragraphs */
+}
+
+ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default list padding */
+}
+
+ul li {
+    display: inline-block; /* Display social media links horizontally */
+    margin-right: 10px; /* Add spacing between social media links */
+}
+
+a {
+    color: pink; /* Set link color to pink */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* CSS for login form */
+form {
+    margin-top: 50px; /* Add space between profile and login section */
+    background-color: beige; /* Set background color to beige */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+input[type="submit"] {
+    background-color: pink; /* Set background color to pink */
+    color: white; /* Set text color to white */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #ff69b4; /* Lighten background color on hover */
+}
