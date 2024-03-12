@@ -1,0 +1,117 @@
+
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #fae1dd 0%, #bcd4e6 100%); /* Soft beige to baby blue gradient */
+        color: #333;
+    }
+
+    main {
+        width: 90%;
+        max-width: 1100px;
+        margin: 30px auto;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #ffffff; /* Pure white background for product cards */
+        border: 1px solid #eee; /* Slight border */
+        border-radius: 10px; /* Rounded corners for elegance */
+    }
+
+    .product img {
+        flex-basis: 30%; /* Allocates space for larger images */
+        max-width: 30%; /* Larger images */
+        height: auto;
+        border-radius: 10px; /* Slightly rounded for a softer look */
+        margin-right: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    }
+
+    .product-details {
+        flex-basis: 65%; /* More space for details */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .product h3 {
+        font-size: 24px;
+        color: #a2836e; /* Soft brown for titles, elegant */
+        margin: 0 0 15px 0;
+    }
+
+    .product .price {
+        font-size: 22px;
+        color: #c19a6b; /* Soft gold color for price */
+        font-weight: bold;
+        margin: 15px 0; /* Increased separation */
+    }
+
+    .product p {
+        font-size: 16px;
+        color: #666; /* Darker font for readability */
+    }
+
+    button {
+        align-self: center;
+        background-color: #a2836e; /* Soft brown to match the title */
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s ease; /* Smooth transform effect */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds depth */
+    }
+
+    button:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        background-color: #c19a6b; /* Transition to soft gold */
+    }
+
+    footer {
+        background-color: #a2836e; /* Harmonizing with the button and title colors */
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+        width: 100%;
+        position: relative;
+    }
+
+    h2 {
+        text-align: center;
+        color: #c19a6b; /* Soft gold for an elegant header */
+        margin-bottom: 50px; /* More space */
+    }
+
+    @media (max-width: 768px) {
+        .product {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .product img {
+            margin: 0 auto 20px;
+            flex-basis: auto;
+            max-width: 50%;
+        }
+
+        .product-details {
+            flex-basis: auto;
+        }
+    }
+

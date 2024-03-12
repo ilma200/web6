@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section</title>
+    <style>
+        /* CSS for profile section */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(212, 240, 247); /* Set background color to beige */
+            color: #333; /* Set text color to dark grey */
+        }
+
+        main {
+            margin: 0 auto; /* Center the main content */
+            max-width: 600px; /* Limit main content width */
+            padding: 20px;
+        }
+
+        section#profile {
+            text-align: center; /* Center align content */
+            background-color: white; /* Set background color to white */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        }
+
+        section#profile img {
+            display: block; /* Ensure image is centered */
+            margin: 0 auto 20px; /* Center image and add space below */
+            width: 200px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make the image circular */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        }
+
+        h2 {
+            color: pink; /* Set heading color to pink */
+        }
+
+        h3 {
+            color: #333; /* Set subheading color to dark grey */
+        }
+
+        h4 {
+            color: pink; /* Set subheading color to pink */
+        }
+
+        p {
+            margin: 10px 0; /* Add margin to paragraphs */
+        }
+
+        ul {
+            list-style: none; /* Remove default list styles */
+            padding: 0; /* Remove default list padding */
+        }
+
+        ul li {
+            display: inline-block; /* Display social media links horizontally */
+            margin-right: 10px; /* Add spacing between social media links */
+        }
+
+        a {
+            color: pink; /* Set link color to pink */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* CSS for login form */
+        form {
+            margin-top: 50px; /* Add space between profile and login section */
+            background-color: beige; /* Set background color to beige */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+
+        input[type="submit"] {
+            background-color: pink; /* Set background color to pink */
+            color: white; /* Set text color to white */
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff69b4; /* Lighten background color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>Profile</h2>
+        <img src="https://files.oaiusercontent.com/file-KIVdth78wejQBt7o30lKmL3A?se=2024-03-11T22%3A52%3A46Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D84a2852e-ad7a-4ae5-a174-508e9606ede9.webp&sig=KiDY1/LQ4T5dOf3hlrfAQqiQa9/6i3xhxmp9i%2BwME8Y%3D" alt="Profile Picture">
+        <h3>Your Name</h3>
+        <p>Brief Biography: Share a short summary about yourself, your experience, and any other personal details you find relevant. This could include your role, your passions, or your goals.</p>
+        
+        <!-- Contact Details -->
+        <h4>Contact Details</h4>
+        <p>Email: example@example.com</p>
+        <p>Phone: +1234567890</p>
+        
+        <!-- Social Media Links -->
+        <h4>Follow Me</h4>
+        <ul>
+            <li><a href="https://www.twitter.com/yourusername">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/yourusername">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/yourusername">Instagram</a></li>
+            <!-- Add other social networks if needed -->
+        </ul>
+    </section>
+
+    <!-- Login Form -->
+    <form action="/login" method="post">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+    </form>
+</main>
+
+</body>
+</html>
+
+
